@@ -90,8 +90,8 @@ int main(void)
 	char str_w1[26] = {0};
 	char str_w2[26] = {0};
 	char str_end[26] = {0};
-    char * filename_read = "data.txt";
-    char * filename_write = "output.txt";
+    char * filename_read = "data9_1.txt";
+    char * filename_write = "output9_1.txt";
     read_file(str1, str2, filename_read);
     is_one_char_in_word(str1, str_w1);
     is_one_char_in_word(str2, str_w2);

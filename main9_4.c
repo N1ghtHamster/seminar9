@@ -11,7 +11,6 @@ void read_file(char *str, char *filename_read)
 	{
 		while ((ch = fgetc(fp)) != EOF)
 			*str++ = ch;
-		str = '\0';
 	}
 	fclose(fp);
 }

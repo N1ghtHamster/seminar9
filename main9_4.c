@@ -25,17 +25,6 @@ void write_file(char *str, char *filename_write)
 	fclose(fp);
 }
 
-void strcopy(char *str, char *dst)
-{
-	char ch;
-	while ((ch = *str++) != '\0')
-	{
-		if (isalpha(ch))
-			*dst++ = ch;
-	}
-	dst = '\0';
-}
-
 void del(char *str, char *dst)
 {
     char ch;
@@ -60,8 +49,6 @@ int main(void)
 	read_file(str, filename_read);
 	del(str, dst);
 	write_file(dst, filename_write);
-	printf("%s\n", str);
-	printf("%s\n", dst);
 	return 0;
 }
 

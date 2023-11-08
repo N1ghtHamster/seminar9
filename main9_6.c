@@ -41,9 +41,7 @@ int main(void)
 	char str[1000] = {0};
 	int count;
 	read_file(str, filename_read);
-	printf("%s\n", str);
 	count = counter(str);
-	printf("%d\n", count);
 	write_file(count, filename_write);
 	return 0;
 }
